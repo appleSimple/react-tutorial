@@ -4,9 +4,9 @@ function MyButton(props) {
   return React.createElement(
     'button',
     { onClick: () => setIsClicked(true) },
-    isClicked ? 'Clicked' : 'Click here!'
+    isClicked ? 'Clicked!' : 'Click here!'
   );
 }
 
 const domContainer = document.querySelector('#root');
-ReactDom.render(React.createElement(MyButton), domContainer);
+ReactDOM.render(React.createElement(MyButton), domContainer);
